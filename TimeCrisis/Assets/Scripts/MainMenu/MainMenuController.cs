@@ -47,6 +47,11 @@ public class MainMenuController : MonoBehaviour
         StartCoroutine(Display(options_panel));
     }
 
+    public void LoadStart()
+    {
+        SceneMan.Instance.LoadSceneByName("Game");
+    }
+
     /////////////////////////////////////////////////////////////////////////
     // Fading Animations
     IEnumerator Display(GameObject panel)

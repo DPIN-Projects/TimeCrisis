@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,9 +21,18 @@ public class SceneMan : MonoBehaviour
     //////////////////////////////////////////////////////
     // Scene Handling
 
+    List<EditorBuildSettingsScene> scenes;
+
+    private void Start()
+    {
+        scenes = new List<EditorBuildSettingsScene>();
+        scenes.AddRange(EditorBuildSettings.scenes);
+    }
+
     public void LoadSceneByName(string scene_name)
     {
-        if (SceneManager.GetSceneByName(scene_name) != null)
+        string path = "Assets/Scenes/" + scene_name + ".unity";
+        if (scenes.Find(x => x.path == path) != null)
             SceneManager.LoadScene(scene_name);
         else
             Debug.Log("Could not load " + scene_name + " scene.");

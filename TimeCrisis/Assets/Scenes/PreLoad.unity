@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64c04ad6b7136a148b0c8cf280f7d38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bckgrnd_music_volume: 0
-  sfx_volume: 0
+  bckgrnd_music_volume: 0.5
+  sfx_volume: 0.5
 --- !u!114 &294920891
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,15 +24,17 @@ public class AudioMan : MonoBehaviour
     // Audio Variables
 
     /// <summary>
-    /// Background music audio volume
+    /// Background music audio volume.
+    /// Default value as 0.5f.
     /// </summary>
-    [HideInInspector]
-    public float bckgrnd_music_volume;
+    [Range(0.0f, 1.0f)]
+    public float bckgrnd_music_volume = 0.5f;
 
     /// <summary>
     /// Special effects audio volume
+    /// Default value as 0.5f.
     /// </summary>
-    [HideInInspector]
-    public float sfx_volume;
+    [Range(0.0f, 1.0f)]
+    public float sfx_volume = 0.5f;
 
 }

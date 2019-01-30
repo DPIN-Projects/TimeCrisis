@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Audio Manager.
+/// Created as singleton as only one instance is needed.
+/// </summary>
 public class AudioMan : MonoBehaviour
 {
     //////////////////////////////////////////////////////
@@ -18,9 +22,16 @@ public class AudioMan : MonoBehaviour
 
     //////////////////////////////////////////////////////
     // Audio Variables
+
+    /// <summary>
+    /// Background music audio volume
+    /// </summary>
     [HideInInspector]
     public float bckgrnd_music_volume;
 
+    /// <summary>
+    /// Special effects audio volume
+    /// </summary>
     [HideInInspector]
     public float sfx_volume;
 

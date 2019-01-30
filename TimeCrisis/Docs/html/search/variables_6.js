@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_5fpanel',['main_panel',['../class_main_menu_controller.html#a92dc736765bf9e2c4b50b94b59f77d00',1,'MainMenuController']]]
+  ['lan_5ftype',['lan_type',['../class_language_man.html#a76a925e866a0c7db4b71d7b1e818fa1c',1,'LanguageMan']]]
 ];

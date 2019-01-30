@@ -8,6 +8,9 @@ var annotated_dup =
     [ "DoxygenWindow", "class_doxygen_window.html", "class_doxygen_window" ],
     [ "DoxyRunner", "class_doxy_runner.html", "class_doxy_runner" ],
     [ "DoxyThreadSafeOutput", "class_doxy_thread_safe_output.html", "class_doxy_thread_safe_output" ],
+    [ "LanguageMan", "class_language_man.html", "class_language_man" ],
     [ "MainMenuController", "class_main_menu_controller.html", "class_main_menu_controller" ],
-    [ "SceneMan", "class_scene_man.html", "class_scene_man" ]
+    [ "MusicController", "class_music_controller.html", null ],
+    [ "SceneMan", "class_scene_man.html", "class_scene_man" ],
+    [ "VolumeSlider", "class_volume_slider.html", "class_volume_slider" ]
 ];

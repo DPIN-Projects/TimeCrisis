@@ -14,7 +14,7 @@ public class SceneMan : MonoBehaviour
     //////////////////////////////////////////////////////
     // Singleton architecture
     public static SceneMan Instance { get; private set; }
-
+    
     private void Awake()
     {
         if(Instance == null)
@@ -22,7 +22,6 @@ public class SceneMan : MonoBehaviour
         else
             Destroy(gameObject);
     }
-    
 
     //////////////////////////////////////////////////////
     // Scene Handling

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sceneman',['SceneMan',['../class_scene_man.html',1,'']]]
+  ['mainmenucontroller',['MainMenuController',['../class_main_menu_controller.html',1,'']]],
+  ['musiccontroller',['MusicController',['../class_music_controller.html',1,'']]]
 ];

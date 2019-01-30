@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pathtodoxygen',['PathtoDoxygen',['../class_doxygen_config.html#ad308ed1d0bdb202587fba232b754929f',1,'DoxygenConfig']]],
-  ['project',['Project',['../class_doxygen_config.html#ae69318495ba1db9f3a4d88e01764f9b4',1,'DoxygenConfig']]]
+  ['oncompletecallback',['onCompleteCallBack',['../class_doxy_runner.html#ac1401822d6b3dea5626b786a94aa98d5',1,'DoxyRunner']]],
+  ['options_5fpanel',['options_panel',['../class_main_menu_controller.html#af3b65ac16536814c4cb6f657a56cfadc',1,'MainMenuController']]]
 ];

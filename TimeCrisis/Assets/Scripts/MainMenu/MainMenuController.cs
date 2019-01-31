@@ -54,7 +54,7 @@ public class MainMenuController : MonoBehaviour
     /// </summary>
     public void LoadStart()
     {
-        SceneMan.Instance.LoadSceneByName("Game");
+        SceneMan.Instance.LoadSceneByEnum("Level1");
     }
 
     public void ExitGame()

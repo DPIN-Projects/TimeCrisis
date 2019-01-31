@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['loadmain',['LoadMain',['../class_main_menu_controller.html#a50a7a4096d69462d51db2a068688f1a8',1,'MainMenuController']]],
-  ['loadoptions',['LoadOptions',['../class_main_menu_controller.html#a4d7533207ad88a89b8724adfc3fa6dbd',1,'MainMenuController']]],
-  ['loadscenebyname',['LoadSceneByName',['../class_scene_man.html#af4be7c984608afa132075dad7e020447',1,'SceneMan']]],
-  ['loadstart',['LoadStart',['../class_main_menu_controller.html#aecb52914342c927d78c0046e46bb19b8',1,'MainMenuController']]]
-];

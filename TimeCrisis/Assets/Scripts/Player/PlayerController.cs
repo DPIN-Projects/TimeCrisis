@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Player related operations
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
-    Transform player_cam;
+    Transform cam_p;
     Animator anim_p;
+    GunController gun_p;
 
     private void Start()
     {
-        player_cam = transform.Find("FirstPersonCharacter");
+        cam_p = transform.Find("FirstPersonCharacter");
         anim_p = GetComponent<Animator>();
+        gun_p = GetComponent<GunController>();
     }
 
     private void Update()
@@ -27,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            FireGun();
+            gun_p.FireWeapon();
         }
     }
 
@@ -39,10 +44,5 @@ public class PlayerController : MonoBehaviour
     void Stand()
     {
         anim_p.SetBool("IsCrouch", false);
-    }
-
-    void FireGun()
-    {
-
     }
 }

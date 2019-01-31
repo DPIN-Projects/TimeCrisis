@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -29,13 +31,17 @@ public class SceneMan : MonoBehaviour
     /// <summary>
     /// All scenes included in editor build settings
     /// </summary>
+#if UNITY_EDITOR
     List<EditorBuildSettingsScene> scenes;
+#endif
 
     private void Start()
     {
+#if UNITY_EDITOR
         // Initialize list with all scenes
         scenes = new List<EditorBuildSettingsScene>();
         scenes.AddRange(EditorBuildSettings.scenes);
+#endif
     }
 
     /// <summary>
@@ -44,6 +50,7 @@ public class SceneMan : MonoBehaviour
     /// <param name="scene_name">Name of the scene to be loaded</param>
     public void LoadSceneByName(string scene_name)
     {
+#if UNITY_EDITOR
         // Check wether the scene passed exists in "Scene" file
         string path = "Assets/Scenes/" + scene_name + ".unity";
         if (scenes.Find(x => x.path == path) != null)
@@ -51,6 +58,10 @@ public class SceneMan : MonoBehaviour
         else
             // Display error
             Debug.Log("Could not load " + scene_name + " scene.");
+#else
+        
+            SceneManager.LoadScene(scene_name);
+#endif
     }
 
     /// <summary>

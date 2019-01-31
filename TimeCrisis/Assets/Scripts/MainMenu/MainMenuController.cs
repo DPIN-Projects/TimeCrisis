@@ -57,6 +57,11 @@ public class MainMenuController : MonoBehaviour
         SceneMan.Instance.LoadSceneByName("Game");
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     /////////////////////////////////////////////////////////////////////////
     // Fading Animations
 

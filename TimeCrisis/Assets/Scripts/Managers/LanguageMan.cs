@@ -37,12 +37,13 @@ public class LanguageMan : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode load)
     {
         scene_text.Clear();
-        scene_text.AddRange(FindObjectsOfType<TextData>());
+        scene_text.AddRange(Resources.FindObjectsOfTypeAll<TextData>());
         LoadLanguage();
     }
 
     public void LoadLanguage()
     {
+        Debug.Log("Text found was: " + scene_text.Count);
         for(int i = 0; i < scene_text.Count; ++i)
         {
             scene_text[i].ShowText();

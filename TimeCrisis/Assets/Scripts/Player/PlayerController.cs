@@ -24,6 +24,11 @@ public class PlayerController : MonoBehaviour
         {
             Stand();
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            FireGun();
+        }
     }
 
     void Crouch()
@@ -34,5 +39,10 @@ public class PlayerController : MonoBehaviour
     void Stand()
     {
         anim_p.SetBool("IsCrouch", false);
+    }
+
+    void FireGun()
+    {
+
     }
 }
